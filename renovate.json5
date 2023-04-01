@@ -12,7 +12,7 @@
   // username: "renovate-bot",
   // gitAuthor: "Renovate Bot <bot@paradigm.co>",
   // in case of Github App
-  username:"poc-renovate-bot[bot]"
+  username: "poc-renovate-bot[bot]",
   gitAuthor: "Self-hosted Renovate Bot <129599507+poc-renovate-bot[bot]@users.noreply.api.github.com>"
 
 
