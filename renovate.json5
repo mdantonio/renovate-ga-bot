@@ -29,7 +29,7 @@
         'pyenv',
       ],
 
-      postUpgradeTasks" {
+      postUpgradeTasks: {
         commands: ["bash myscript.sh"],
         fileFilters: ["random-*.txt"],
         executionMode: "update"
