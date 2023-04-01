@@ -20,7 +20,7 @@
 
   // Two options suggested to use a single configuration file
   onboarding: false,
-  requireConfig: false,
+  requireConfig: 'optional',
 
   platform: "github",
   // branchPrefix: "test-renovate/",
