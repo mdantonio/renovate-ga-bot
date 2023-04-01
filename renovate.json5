@@ -19,8 +19,23 @@
     "mdantonio/renovate-ga-bot",
   ],
 
+  allowedPostUpgradeCommands: ["^bash myscript.sh$"],
 
 
+  packageRules: [
+    {
+      matchManagers: [
+        'pip_requirements',
+        'pyenv',
+      ],
+
+      postUpgradeTasks" {
+        commands: ["bash myscript.sh"],
+        fileFilters: ["random-*.txt"],
+        executionMode: "update"
+      }
+    }
+  ],
 
 
 
