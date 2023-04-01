@@ -8,11 +8,20 @@
 
   // Options for Self Hosted Bot
 
+  // in case of Personal Access Token
+  // username: "renovate-bot",
+  // gitAuthor: "Renovate Bot <bot@paradigm.co>",
+  // in case of Github App
+  username:"poc-renovate-bot[bot]"
+  gitAuthor: "Self-hosted Renovate Bot <129599507+poc-renovate-bot[bot]@users.noreply.api.github.com>"
+
+
   // dryRun: "full",
-  username: "renovate-bot",
-  gitAuthor: "Renovate Bot <bot@paradigm.co>",
+
+  // Two options suggested to use a single configuration file
   onboarding: false,
-  // requireConfig: false,
+  requireConfig: false,
+
   platform: "github",
   // branchPrefix: "test-renovate/",
   repositories: [
@@ -20,6 +29,10 @@
   ],
 
   allowedPostUpgradeCommands: ["^bash myscript.sh$"],
+
+
+
+
 
 
   packageRules: [
