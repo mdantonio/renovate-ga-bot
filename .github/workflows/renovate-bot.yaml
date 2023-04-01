@@ -1,6 +1,15 @@
 name: Renovate Bot
 on:
   workflow_dispatch:
+    inputs:
+      log_level:
+        type: choice
+        description: "Log level"
+        required: true
+        default: "info"
+        options:
+          - "info"
+          - "debug"
   schedule:
     - cron: '0/15 * * * *'
 
@@ -17,4 +26,4 @@ jobs:
           token: ${{ secrets.RENOVATE_TOKEN }}
           configurationFile: renovate.json5
         env:
-          LOG_LEVEL: 'debug'
+          LOG_LEVEL: ${{ github.event.inputs.log_level || "info" }}
