@@ -2,7 +2,7 @@ name: Renovate Bot
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0/1 * * * *'
+    - cron: '0/15 * * * *'
 
 jobs:
   renovate:
@@ -15,5 +15,6 @@ jobs:
         with:
           useSlim: true
           token: ${{ secrets.RENOVATE_TOKEN }}
+          configurationFile: /renovate.json5
         env:
           LOG_LEVEL: 'debug'

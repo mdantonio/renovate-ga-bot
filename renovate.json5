@@ -12,7 +12,9 @@
   username: "renovate-bot",
   gitAuthor: "Renovate Bot <bot@paradigm.co>",
   onboarding: false,
+  // requireConfig: false,
   platform: "github",
+  // branchPrefix: "test-renovate/",
   repositories: [
     "mdantonio/renovate-ga-bot",
   ],
