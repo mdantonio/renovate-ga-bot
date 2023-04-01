@@ -1,4 +1,4 @@
-name: Self-hosted Renovate Bot
+name: Renovate Bot
 on:
   workflow_dispatch:
   schedule:

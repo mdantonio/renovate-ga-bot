@@ -5,6 +5,17 @@
     ':combinePatchMinorReleases',
   ],
 
+
+  // Options for Self Hosted Bot
+  autodiscover: true,
+  autodiscoverFilter: ["renovate-ga-bot/*"]
+
+
+
+
+
+
+
   // default timezone is UTC, so this schedule is expected to be outside
   // the normal working hours for most of our engs
   schedule: [
