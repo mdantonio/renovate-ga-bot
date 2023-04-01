@@ -8,7 +8,7 @@
 
   // Options for Self Hosted Bot
   autodiscover: true,
-  autodiscoverFilter: ["renovate-ga-bot/*"]
+  autodiscoverFilter: ["mdantonio/renovate-ga-bot/*"]
 
 
 
