@@ -15,6 +15,6 @@ jobs:
         with:
           useSlim: true
           token: ${{ secrets.RENOVATE_TOKEN }}
-          configurationFile: /renovate.json5
+          configurationFile: renovate.json5
         env:
           LOG_LEVEL: 'debug'
