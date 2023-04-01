@@ -15,3 +15,5 @@ jobs:
         with:
           useSlim: true
           token: ${{ secrets.RENOVATE_TOKEN }}
+        env:
+          LOG_LEVEL: 'debug'
