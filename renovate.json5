@@ -45,7 +45,7 @@
       postUpgradeTasks: {
         commands: ["bash infra/renovate/renovate_post_upgrade_common_services.sh"],
         fileFilters: ["random-*.txt"],
-        executionMode: "update"
+        executionMode: "branch"
       }
     }
   ],
