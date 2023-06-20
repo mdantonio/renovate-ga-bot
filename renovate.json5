@@ -28,7 +28,7 @@
     "mdantonio/renovate-ga-bot",
   ],
 
-  allowedPostUpgradeCommands: ["^bash myscript.sh$"],
+  allowedPostUpgradeCommands: ["^bash infra/renovate/renovate_post_upgrade_common_services.sh$"],
 
 
 
@@ -43,7 +43,7 @@
       ],
 
       postUpgradeTasks: {
-        commands: ["bash myscript.sh"],
+        commands: ["bash infra/renovate/renovate_post_upgrade_common_services.sh"],
         fileFilters: ["random-*.txt"],
         executionMode: "update"
       }
