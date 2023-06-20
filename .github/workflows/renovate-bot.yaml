@@ -31,6 +31,7 @@ jobs:
           useSlim: false
           # token: ${{ secrets.RENOVATE_TOKEN }}
           token: '${{ steps.get_token.outputs.token }}'
+          renovate-version: 35
           configurationFile: renovate.json5
         env:
           LOG_LEVEL: "${{ github.event.inputs.log_level || 'info' }}"
